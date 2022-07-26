@@ -9,6 +9,7 @@ def vc_encrypt(message, key):
             encrypt_value = encrypt_value - 26 # 64 is ascii of char before 'A' and there are 26 letters in the alphabet
         encryption += chr(encrypt_value)
         num += 1
+    print(encryption)
     return encryption
 
 
