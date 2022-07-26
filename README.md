@@ -76,9 +76,9 @@ In your last task I want you to brute force find the keys to the following encry
 For bonus points track how long each varation takes to solve!
 
 ##### **Find the keys to the following ciphers (Bonus: track the time it takes to brute force):**
-  - Caesar - DTWVGHQTEG - BRUTEFORCE - key length (3)
-  - Caesar - CSVUFGPSDF - BRUTEFORCE - key length (4)
-  - Caesar - KADCNOXALN - BRUTEFORCE - key length (5)
+  - Caesar - DTWVGHQTEG - BRUTEFORCE - key length (3)  //BRUTEFORCE (00:02:35.39) KEY: 2
+  - Caesar - CSVUFGPSDF - BRUTEFORCE - key length (4)  //BRUTEFORCE (00:00:18.81) KEY: 1
+  - Caesar - KADCNOXALN - BRUTEFORCE - key length (5)  //BRUTEFORCE (00:03:34.23) KEY: 9
   - Vigenere - NGRFTCAGZQ - BRUTEFORCE - key length (3)
   - Vigenere - JSGZMGAXKF - BRUTEFORCE - key length (4)
   - Vigenere - EGPHYIDMQY - BRUTEFORCE - key length (5)
