@@ -4,7 +4,7 @@ def vc_encrypt(message, key):
     num = 0
     for i in list(message):
         spot = num % len(key_chars)
-        encrypt_value = ord(i) + (ord(key_chars[spot]) - 64)
+        encrypt_value = ord(i) + (ord(key_chars[spot]) - 65)
         if encrypt_value > 90:
             encrypt_value = encrypt_value - 26 # 64 is ascii of char before 'A' and there are 26 letters in the alphabet
         encryption += chr(encrypt_value)
@@ -19,7 +19,7 @@ def vc_decrypt(encrypted_message, key):
     num = 0
     for i in list(encrypted_message):
         spot = num % len(key_chars)
-        decrypt_value = ord(i) - (ord(key_chars[spot]) - 64)
+        decrypt_value = ord(i) - (ord(key_chars[spot]) - 65)
         if decrypt_value < 65:
             decrypt_value = decrypt_value + 26 # 64 is ascii of char before 'A' and there are 26 letters in the alphabet
         decryption += chr(decrypt_value)
@@ -29,9 +29,9 @@ def vc_decrypt(encrypted_message, key):
 
 
 def run_tests():
-    vc_decrypt("CSWMUCWBYHLQXRCSYQQOFQWBPSM", "INTERN") #TECHCONNECTCODINGCHALLENGES
-    vc_decrypt("VVJHSMHDLHU", "CAT") #SUPERSECRET
-    vc_decrypt("VQPUXBCLYCOHNXUIBNUBHITCJJAKHCQXSQCPHXYPDAGJZQCFKUSKIFQAR", "BIGBOI") #THISISACRAZYLONGMESSAGETHATISTOOLONGFORNOREASONWILLITWORK
+    vc_decrypt("BRVLTBVAXGKPWQBRXPPNEPVAORL", "INTERN") #TECHCONNECTCODINGCHALLENGES
+    vc_decrypt("UUIGRLGCKGT", "CAT") #SUPERSECRET
+    vc_decrypt("UPOTWABKXBNGMWTHAMTAGHSBIIZJGBPWRPBOGWXOCZFIYPBEJTRJHEPZQ", "BIGBOI") #THISISACRAZYLONGMESSAGETHATISTOOLONGFORNOREASONWILLITWORK
 
 def run_encrpyt():
     message = vc_encrypt("IAMANINTERNWORKINGHERECURRENTLYDURINGTHESUMMER", "SUMMER")

@@ -7,6 +7,7 @@ def cc_encrypt(message, key):
         if encrypt_value > 90:
             encrypt_value = encrypt_value - 26 # 64 is ascii of char before 'A' and 90 is ascii value of 'Z' and 90 - 64 = 26
         encryption += chr(encrypt_value)
+    print(encryption)
     return encryption
 
 
